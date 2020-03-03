@@ -1,0 +1,72 @@
+.Header {
+  text-align: center;
+  color: black;
+  background-color:#2eb8b8;
+  padding: 6px;
+}
+
+.container {
+  display: flex;
+  margin: 0px, 20px, 0px, 20px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 8px 15px rgb(0, 174, 255);
+  border-radius: 25px 25px 25px;
+  margin-bottom: 40px;
+  background-color: white;
+}
+
+img {
+  width: 330px;
+  height:  250px;
+  border-radius: 25px 25px 25px;
+}
+
+.Title {
+  color: red;
+  margin-left: 3%;
+}
+
+p.title {
+  color: green;
+  /* font-weight: normal; */
+  font-size: 170%;
+  
+}
+
+p.description {
+  color: black;
+  font-size: 110%;
+}
+
+p.author {
+  color: blue;
+  font-size: 100%;
+}
+
+@media screen and (max-width: 795px) {
+  .container {
+    display: block;
+    margin: 0px, 50px;
+    border: none;  
+  }
+
+  /* img {
+    width: 300px;
+    height:  220px;
+    border-radius: 25px 25px 25px;
+  } */
+
+  p.title {
+    font-size: 130%;
+  }
+  
+  p.description {
+    font-size: 110%;
+  }
+
+  p.author {
+    font-size: 90%;
+  }
+
+}
