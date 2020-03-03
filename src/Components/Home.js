@@ -13,14 +13,13 @@ export class Home extends Component {
     //   console.log(data);
     // });
 
-    const loadfunc = async () => {
-        const res = await fetch("http://newsapi.org/v2/top-headlines?pageSize=10&country=in&category=Business&apiKey=9ced313f2eca4419aa010004b2bdfb1d");
-        const totalNews = await res.json();
-        this.setState({List: totalNews.articles});
-        console.log("done")
-        console.log(totalNews.articles);
-    }
-    loadfunc();
+    axios
+    .get("https://newsapi.org/v2/top-headlines?pageSize=10&country=in&category=Business&apiKey=9ced313f2eca4419aa010004b2bdfb1d")
+    .then((data) => {
+      console.log(data)
+      this.setState({ List: data.data.articles });
+    })
+    .catch(err => console.log(err))
 
     // this.fetchUsers();
   }
