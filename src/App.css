@@ -57,11 +57,11 @@ p.author {
     border: none;  
   }
 
-  /* img {
-    width: 300px;
+  img {
+    width: 310px;
     height:  220px;
     border-radius: 25px 25px 25px;
-  } */
+  }
 
   p.title {
     font-size: 130%;
