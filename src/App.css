@@ -5,7 +5,7 @@
   padding: 6px;
 }
 
-.container {
+.container2 {
   display: flex;
   margin: 0px, 20px, 0px, 20px;
   border: 1px solid;
@@ -44,8 +44,14 @@ p.author {
   font-size: 100%;
 }
 
+.button {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
 @media screen and (max-width: 795px) {
-  .container {
+  .container2 {
     display: block;
     margin: 0px, 50px;
     border: none;  
