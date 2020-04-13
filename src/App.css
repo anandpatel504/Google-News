@@ -50,6 +50,10 @@ p.author {
     align-items: center;
 }
 
+.time {
+  color: gray;
+}
+
 @media screen and (max-width: 795px) {
   .container2 {
     display: block;

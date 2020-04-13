@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import TimeAgo from 'react-timeago';
 
 export class Home extends Component {
   state = {
@@ -65,9 +66,10 @@ previouspage = () => {
                   <p className="title">{item.title}</p>
                   <p className="description">{item.description}</p>
                   <p className="author">{item.author}</p>
+                  <TimeAgo className="time" date={item.publishedAt} />
                 </div>
               </div>
-            </a> 
+            </a>
           );
         })}
         <div className="button">
